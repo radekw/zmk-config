@@ -77,7 +77,6 @@
                         &none   &none   &none   &none   &none   &none   &none   &none
             >;
         };
-    };
 
         adjust_layer {
             bindings = <
@@ -88,7 +87,6 @@
                         &none        &none        &none   &none   &none   &none   &none   &none
             >;
         };
-    };
 
         nav_layer {
             bindings = <
@@ -99,6 +97,7 @@
                         &none   &none   &none   &none   &none   &none   &none   &none
             >;
         };
+
     };
 };
 
