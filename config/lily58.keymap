@@ -19,7 +19,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_ESC";
             tapping-term-ms = <200>;
-            bindings = <&kp GRAVE>, <&kp ESC>;
+            bindings = <&kp GRAVE>, <&kp ESC>, <&kp ESC>;
         };
     };
 
