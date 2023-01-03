@@ -15,9 +15,10 @@
 
 / {
     behaviors {
-        td_esc: tap_dance_0 {
+        td_esc: tap_dance_esc {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_ESC";
+            #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp GRAVE>, <&kp ESC>, <&kp ESC>;
         };
