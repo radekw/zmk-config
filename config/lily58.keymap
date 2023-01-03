@@ -76,11 +76,11 @@
 
         raise_layer {
             bindings = <
-&none    &none         &none       &kp LT       &kp GT       &none                   &none    &kp LT       &kp GT       &none         &none        &none
-&none    &none         &none       &kp KP_LPAR  &kp KP_RPAR  &none                   &none    &kp KP_LPAR  &kp KP_RPAR  &none         &none        &none
-&kp DEL  &kp KP_MINUS  &kp KP_PLUS &kp LBKT     &kp RBKT     &none                   &none    &kp LBKT     &kp RBKT     &kp KP_MINUS  &kp KP_PLUS  &none
-&none    &kp UNDER     &kp EQUAL   &kp LBRC     &kp RBRC     &none   &none   &none   &none    &kp LBRC     &kp RBRC     &kp UNDER     &kp EQUAL    &none
-                       &trans      &trans       &trans       &trans  &trans  &trans  &kp DEL  &trans
+&none    &none         &none       &kp LT    &kp GT    &none                   &none    &kp LT    &kp GT    &none         &none        &none
+&none    &none         &none       &kp LPAR  &kp RPAR  &none                   &none    &kp LPAR  &kp RPAR  &none         &none        &none
+&kp DEL  &kp KP_MINUS  &kp KP_PLUS &kp LBKT  &kp RBKT  &none                   &none    &kp LBKT  &kp RBKT  &kp KP_MINUS  &kp KP_PLUS  &none
+&none    &kp UNDER     &kp EQUAL   &kp LBRC  &kp RBRC  &none   &none   &none   &none    &kp LBRC  &kp RBRC  &kp UNDER     &kp EQUAL    &none
+                       &trans      &trans    &trans    &trans  &trans  &trans  &kp DEL  &trans
             >;
         };
 
@@ -96,10 +96,10 @@
 
         nav_layer {
             bindings = <
-&kp F12  &kp F1        &kp F2         &kp F3            &kp F4             &kp F5                  &kp F6    &kp F7     &kp F8     &kp F9     &kp F10  &kp F11
-&none    &none         &kp UP         &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &none                   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none    &kp PSCRN
-&kp DEL  &kp LEFT      &kp DOWN       &kp RIGHT         &none              &none                   &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none    &kp LA(LC(DEL))
-&none    &kp LG(LEFT)  &kp LG(PG_DN)  &kp LG(PG_UP)     &kp LG(RIGHT)      &none   &none   &none   &none     &none      &none      &none      &none    &none
+&kp F12      &kp F1    &kp F2         &kp F3            &kp F4             &kp F5                  &kp F6    &kp F7     &kp F8     &kp F9     &kp F10  &kp F11
+&kp LG(TAB)  &none     &kp UP         &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &none                   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none    &kp PSCRN
+&kp DEL      &kp LEFT  &kp DOWN       &kp RIGHT         &none              &none                   &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none    &kp LA(LC(DEL))
+&none        &none     &kp LG(PG_DN)  &kp LG(PG_UP)     &none              &none   &none   &none   &none     &none      &none      &none      &none    &none
                                       &trans            &trans             &trans  &trans  &trans  &trans    &kp DEL    &trans
             >;
         };
