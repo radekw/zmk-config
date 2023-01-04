@@ -13,6 +13,10 @@
     tapping-term-ms = <200>;
 };
 
+&nice_view_spi {
+    cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
+};
+
 / {
     behaviors {
         td_esc: tap_dance_esc {
@@ -66,8 +70,8 @@
 
         lower_layer {
             bindings = <
-&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none   &none                   &none            &none      &none      &kp LPAR   &kp RPAR      &kp BSPC
-&ext_power EP_TOG    &none   &none   &none   &none   &none                   &kp KP_DIVIDE    &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &none
+&none    &none   &none   &none   &none   &none                   &none            &none      &none      &kp LPAR   &kp RPAR      &kp BSPC
+&none    &none   &none   &none   &none   &none                   &kp KP_DIVIDE    &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &none
 &kp DEL  &none   &none   &none   &none   &none                   &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp KP_DOT
 &none    &none   &none   &none   &none   &none   &none   &none   &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_EQUAL  &kp KP_DOT
                          &trans  &trans  &trans  &trans  &trans  &trans           &kp DEL    &trans
@@ -86,11 +90,11 @@
 
         adjust_layer {
             bindings = <
-&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none   &none                   &none   &none   &none   &none   &none        &none
-&reset     &bootloader  &none        &none        &none   &none                   &none   &none   &none   &none   &bootloader  &reset
-&none      &none        &none        &none        &none   &none                   &none   &none   &none   &none   &none        &none
-&none      &none        &none        &none        &none   &none   &none   &none   &none   &none   &none   &none   &none        &none
-                        &trans       &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1      &bt BT_SEL 2 &none   &none                   &none   &none  &none  &none  &none        &none
+&reset     &bootloader  &ext_power EP_TOG &none        &none   &none                   &none   &none  &none  &none  &bootloader  &reset
+&none      &kp A        &none             &none        &none   &none                   &none   &none  &none  &none  &none        &none
+&none      &none        &none             &none        &none   &none   &none   &none   &none   &none  &none  &none  &none        &none
+                        &trans            &trans       &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
