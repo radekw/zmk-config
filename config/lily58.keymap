@@ -40,7 +40,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_ESC";
             #binding-cells = <0>;
-            apping-term-ms = <200>;
+            tapping-term-ms = <200>;
             bindings = <&kp GRAVE>, <&kp ESC>, <&kp ESC>;
         };
         bspc_del: backspace_delete {
