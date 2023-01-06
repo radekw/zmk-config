@@ -25,7 +25,7 @@ COMBO(del,    &kp DEL,      27 28,    30)
 COMBO(esc,    &kp ESC,      31 32,    30)
 COMBO(ret,    &kp RET,      32 33,    30)
 
-COMBO(excl,   &kp EXCL,     13 25,    30)
+COMBO(excl,   &kp EXCL,     13 14,    30)
 COMBO(at,     &kp AT,       14 26,    30)
 COMBO(hash,   &kp HASH,     15 27,    30)
 COMBO(dllr,   &kp DLLR,     16 28,    30)
@@ -48,7 +48,7 @@ COMBO(rbrc,   &kp RBRC,     45 47,    30)
 COMBO(lt,     &kp LT,       38 39 40, 30)
 COMBO(gt,     &kp GT,       45 46 47, 30)
 
-COMBO(ctrl_u, &kp LC(U),    18 19,    30)
+COMBO(ctrl_u, &kp LC(U),    19 22,    30)
 
 COMBO(capswd, &caps_word,   36 49,    50)
 
