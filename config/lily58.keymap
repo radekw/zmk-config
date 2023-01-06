@@ -13,31 +13,17 @@
 #define G_C_R LG(LC(RIGHT))
 #define A_C_D LA(LC(DEL))
 
-#define COMBO(NAME, BINDINGS, KEYPOS, TERM) \
-        combo_##NAME { \
-            timeout-ms = <TERM>; \
-            bindings = <BINDINGS>; \
-            key-positions = <KEYPOS>; \
-            layers = <0 1>; \
-        };
+#include "combos.dtsi"
 
 &mt {
     tapping-term-ms = <175>;
 };
 
 &caps_word {
-    continue-list = <UNDERSCORE MINUS>;
+    continue-list = <UNDERSCORE MINUS BSPC DEL N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
 };
 
 / {
-
-    combos {
-        compatible = "zmk,combos";
-COMBO(bspc,   &kp BSPC,     26 27, 30)
-COMBO(del,    &kp DEL,      27 28, 30)
-COMBO(esc,    &kp ESC,      31 32, 30)
-COMBO(ent,    &kp ENT,      32 33, 30)
-    };
 
     behaviors {
         hm: homerow_mods {
