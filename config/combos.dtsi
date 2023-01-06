@@ -38,16 +38,16 @@ COMBO(under,  &kp UNDER,    19 20 21, 30)
 COMBO(equal,  &kp EQUAL,    19 20, 30)
 COMBO(plus,   &kp KP_PLUS,  19 21, 30)
 
-COMBO(lpar,   &kp LPAR,     37 38, 30)
+COMBO(lpar,   &kp LPAR,     38 39, 30)
 COMBO(rpar,   &kp RPAR,     46 47, 30)
-COMBO(lbkt,   &kp LBKT,     38 39, 30)
+COMBO(lbkt,   &kp LBKT,     39 40, 30)
 COMBO(rbkt,   &kp RBKT,     45 46, 30)
-COMBO(lbrc,   &kp LBRC,     37 39, 30)
+COMBO(lbrc,   &kp LBRC,     38 40, 30)
 COMBO(rbrc,   &kp RBRC,     45 47, 30)
-COMBO(lt,     &kp LT,       37 38 39, 30)
+COMBO(lt,     &kp LT,       38 39 40, 30)
 COMBO(gt,     &kp GT,       45 46 47, 30)
 
-/* COMBO(capswd, &caps_word,   36 49, 50) */
+COMBO(capswd, &caps_word,   36 49, 50)
 
     };
 };
