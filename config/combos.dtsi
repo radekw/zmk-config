@@ -47,7 +47,7 @@ COMBO(rbrc,   &kp RBRC,     45 47, 0, 30)
 COMBO(lt,     &kp LT,       37 38 39, 0, 30)
 COMBO(gt,     &kp GT,       45 46 47, 0, 30)
 
-COMBO(capswd, &caps_word,   36 49, CLM, 50)
+COMBO(capswd, &caps_word,   36 49, 0, 50)
 
     };
 };
