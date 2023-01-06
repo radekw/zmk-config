@@ -8,13 +8,6 @@
   ╰──────────╮ 50 51 52 53 │ │ 54 55 56 57 ╭──────────╯
              ╰─────────────╯ ╰─────────────╯            */
 
-#define COMBO(NAME, BINDINGS, KEYPOS, TERM) \
-        combo_##NAME { \
-            timeout-ms = <TERM>; \
-            bindings = <BINDINGS>; \
-            key-positions = <KEYPOS>; \
-            layers = <0 1>; \
-        };
 
 / {
     combos {
