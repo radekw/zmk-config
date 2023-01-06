@@ -30,7 +30,7 @@ COMBO(hash,   &kp HASH,     28 15, 30)
 COMBO(dllr,   &kp DLLR,     28 16, 30)
 COMBO(prcnt,  &kp PRCNT,    28 17, 30)
 COMBO(caret,  &kp CARET,    28 18, 30)
-COMBO(apms,   &kp APMS,     31 19, 30)
+COMBO(amps,   &kp AMPS,     31 19, 30)
 COMBO(astrk,  &kp ASTRK,    31 20, 30)
 
 COMBO(minus,  &kp KP_MINUS, 20 21, 30)
