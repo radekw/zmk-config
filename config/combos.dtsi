@@ -8,7 +8,7 @@
   ╰──────────╮ 50 51 52 53 │ │ 54 55 56 57 ╭──────────╯
              ╰─────────────╯ ╰─────────────╯            */
 
-#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM) \
+#define COMBO(NAME, BINDINGS, KEYPOS, TERM) \
         combo_##NAME { \
             timeout-ms = <TERM>; \
             bindings = <BINDINGS>; \
@@ -20,7 +20,7 @@
     combos {
         compatible = "zmk,combos";
 
-/* COMBO(bspc,   &kp BSPC,     26 27, 30) */
+COMBO(bspc,   &kp BSPC,     26 27, 30)
 /* COMBO(del,    &kp DEL,      27 28, 30) */
 /* COMBO(esc,    &kp ESC,      31 32, 30) */
 /* COMBO(ent,    &kp ENT,      32 33, 30) */
