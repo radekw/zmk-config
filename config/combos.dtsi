@@ -22,32 +22,32 @@
 
 COMBO(bspc,   &kp BSPC,     26 27, 30)
 COMBO(del,    &kp DEL,      27 28, 30)
-/* COMBO(esc,    &kp ESC,      31 32, 30) */
-/* COMBO(ent,    &kp ENT,      32 33, 30) */
-/* COMBO(excl,   &kp EXCL,     28 13, 30) */
-/* COMBO(at,     &kp AT,       28 14, 30) */
-/* COMBO(hash,   &kp HASH,     28 15, 30) */
-/* COMBO(dllr,   &kp DLLR,     28 16, 30) */
-/* COMBO(prcnt,  &kp PRCNT,    28 17, 30) */
-/* COMBO(caret,  &kp CARET,    28 18, 30) */
-/* COMBO(apms,   &kp APMS,     31 19, 30) */
-/* COMBO(astrk,  &kp ASTRK,    31 20, 30) */
-/**/
-/* COMBO(minus,  &kp KP_MINUS, 20 21, 30) */
-/* COMBO(under,  &kp UNDER,    19 20 21, 30) */
-/* COMBO(equal,  &kp EQUAL,    19 20, 30) */
-/* COMBO(plus,   &kp KP_PLUS,  19 21, 30) */
-/**/
-/* COMBO(lpar,   &kp LPAR,     37 38, 30) */
-/* COMBO(rpar,   &kp RPAR,     46 47, 30) */
-/* COMBO(lbkt,   &kp LBKT,     38 39, 30) */
-/* COMBO(rbkt,   &kp RBKT,     45 46, 30) */
-/* COMBO(lbrc,   &kp LBRC,     37 39, 30) */
-/* COMBO(rbrc,   &kp RBRC,     45 47, 30) */
-/* COMBO(lt,     &kp LT,       37 38 39, 30) */
-/* COMBO(gt,     &kp GT,       45 46 47, 30) */
-/**/
-/* COMBO(capswd, &caps_word,   36 49, 50) */
+COMBO(esc,    &kp ESC,      31 32, 30)
+COMBO(ret,    &kp RET,      32 33, 30)
+COMBO(excl,   &kp EXCL,     28 13, 30)
+COMBO(at,     &kp AT,       28 14, 30)
+COMBO(hash,   &kp HASH,     28 15, 30)
+COMBO(dllr,   &kp DLLR,     28 16, 30)
+COMBO(prcnt,  &kp PRCNT,    28 17, 30)
+COMBO(caret,  &kp CARET,    28 18, 30)
+COMBO(apms,   &kp APMS,     31 19, 30)
+COMBO(astrk,  &kp ASTRK,    31 20, 30)
+
+COMBO(minus,  &kp KP_MINUS, 20 21, 30)
+COMBO(under,  &kp UNDER,    19 20 21, 30)
+COMBO(equal,  &kp EQUAL,    19 20, 30)
+COMBO(plus,   &kp KP_PLUS,  19 21, 30)
+
+COMBO(lpar,   &kp LPAR,     37 38, 30)
+COMBO(rpar,   &kp RPAR,     46 47, 30)
+COMBO(lbkt,   &kp LBKT,     38 39, 30)
+COMBO(rbkt,   &kp RBKT,     45 46, 30)
+COMBO(lbrc,   &kp LBRC,     37 39, 30)
+COMBO(rbrc,   &kp RBRC,     45 47, 30)
+COMBO(lt,     &kp LT,       37 38 39, 30)
+COMBO(gt,     &kp GT,       45 46 47, 30)
+
+COMBO(capswd, &caps_word,   36 49, 50)
 
     };
 };
