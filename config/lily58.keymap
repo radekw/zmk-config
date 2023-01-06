@@ -13,8 +13,10 @@
 #define G_C_R LG(LC(RIGHT))
 #define A_C_D LA(LC(DEL))
 
+#include "combos.dtsi"
+
 &mt {
-    tapping-term-ms = <200>;
+    tapping-term-ms = <175>;
 };
 
 / {
@@ -46,78 +48,6 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-        combo_bspc {
-            timeout-ms = <30>;
-            key-positions = <26 27>;
-            bindings = <&kp BSPC>;
-        };
-        combo_del {
-            timeout-ms = <30>;
-            key-positions = <27 28>;
-            bindings = <&kp DEL>;
-        };
-        combo_esc {
-            timeout-ms = <30>;
-            key-positions = <31 32>;
-            bindings = <&kp ESC>;
-        };
-        combo_ent {
-            timeout-ms = <30>;
-            key-positions = <32 33>;
-            bindings = <&kp RET>;
-        };
-        combo_excl {
-            timeout-ms = <30>;
-            key-positions = <28 13>;
-            bindings = <&kp EXCL>;
-        };
-        combo_at {
-            timeout-ms = <30>;
-            key-positions = <28 14>;
-            bindings = <&kp AT>;
-        };
-        combo_hash {
-            timeout-ms = <30>;
-            key-positions = <28 15>;
-            bindings = <&kp HASH>;
-        };
-        combo_dllr {
-            timeout-ms = <30>;
-            key-positions = <28 16>;
-            bindings = <&kp DLLR>;
-        };
-        combo_percent {
-            timeout-ms = <30>;
-            key-positions = <28 17>;
-            bindings = <&kp PRCNT>;
-        };
-        combo_caret {
-            timeout-ms = <30>;
-            key-positions = <31 18>;
-            bindings = <&kp CARET>;
-        };
-        combo_apms {
-            timeout-ms = <30>;
-            key-positions = <31 19>;
-            bindings = <&kp AMPS>;
-        };
-        combo_astrk {
-            timeout-ms = <30>;
-            key-positions = <31 20>;
-            bindings = <&kp ASTRK>;
-        };
-    };
-
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <2 3>;
-            then-layer = <4>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -144,7 +74,7 @@
         lower_layer {
             bindings = <
 &kp TILDE  &none   &none   &none   &none   &none                   &none            &kp KP_N0  &kp KP_N0  &kp LPAR   &kp RPAR      &kp BSPC
-&kp TILDE  &none   &none   &none   &none   &none                   &kp KP_DIVIDE    &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp TILDE
+&none      &none   &none   &none   &none   &none                   &kp KP_DIVIDE    &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &none
 &kp DEL    &none   &none   &none   &none   &none                   &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp KP_DOT
 &none      &none   &none   &none   &none   &none   &none   &none   &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_EQUAL  &kp KP_DOT
                            &trans  &trans  &trans  &trans  &trans  &trans           &kp DEL    &trans
@@ -154,7 +84,7 @@
         raise_layer {
             bindings = <
 &kp GRAVE  &none         &none       &kp LT    &kp GT    &none                   &none    &kp LT    &kp GT    &none         &none        &none
-&kp GRAVE  &none         &none       &kp LPAR  &kp RPAR  &none                   &none    &kp LPAR  &kp RPAR  &none         &none        &kp GRAVE
+&none      &none         &none       &kp LPAR  &kp RPAR  &none                   &none    &kp LPAR  &kp RPAR  &none         &none        &none
 &kp DEL    &kp KP_MINUS  &kp KP_PLUS &kp LBKT  &kp RBKT  &none                   &none    &kp LBKT  &kp RBKT  &kp KP_MINUS  &kp KP_PLUS  &none
 &none      &kp UNDER     &kp EQUAL   &kp LBRC  &kp RBRC  &none   &none   &none   &none    &kp LBRC  &kp RBRC  &kp UNDER     &kp EQUAL    &none
                          &trans      &trans    &trans    &trans  &trans  &trans  &kp DEL  &trans
@@ -182,5 +112,14 @@
         };
 
     };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <2 3>;
+            then-layer = <4>;
+        };
+    };
+
 };
 
