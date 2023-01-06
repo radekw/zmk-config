@@ -19,6 +19,10 @@
     tapping-term-ms = <175>;
 };
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS>;
+};
+
 / {
     behaviors {
         hm: homerow_mods {
@@ -45,6 +49,14 @@
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <2 3>;
+            then-layer = <4>;
         };
     };
 
@@ -112,14 +124,5 @@
         };
 
     };
-
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <2 3>;
-            then-layer = <4>;
-        };
-    };
-
 };
 

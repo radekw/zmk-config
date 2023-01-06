@@ -13,6 +13,7 @@
             timeout-ms = <TERM>; \
             bindings = <BINDINGS>; \
             key-positions = <KEYPOS>; \
+            layers = <0 1>; \
         };
 
 / {
