@@ -53,7 +53,7 @@ COMBO(ctrl_u, &kp LC(U),    19 22,    30)
 COMBO(copy,   &kp LG(C),    26 39,    30)
 COMBO(paste,  &kp LG(V),    27 40,    30)
 COMBO(find,   &kp LG(F),    28 41,    30)
-COMBO(finda,  &kp LG(G),    29 40,    30)
+COMBO(finda,  &kp LG(G),    29 41,    30)
 
 COMBO(vim_wa, &vim_wa,      40 14,    40)
 COMBO(vim_qa, &vim_qa,      40 13,    40)
