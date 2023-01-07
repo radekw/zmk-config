@@ -25,6 +25,7 @@ COMBO(del,    &kp DEL,      27 28,    30)
 COMBO(esc,    &kp ESC,      31 32,    30)
 COMBO(ret,    &kp RET,      32 33,    30)
 
+// symbols
 COMBO(excl,   &kp EXCL,     13 26,    30)
 COMBO(at,     &kp AT,       14 27,    30)
 COMBO(hash,   &kp HASH,     15 28,    30)
@@ -34,11 +35,13 @@ COMBO(caret,  &kp CARET,    18 31,    30)
 COMBO(amps,   &kp AMPS,     19 32,    30)
 COMBO(astrk,  &kp ASTRK,    20 33,    30)
 
+// signs
 COMBO(minus,  &kp KP_MINUS, 20 21,    30)
 COMBO(under,  &kp UNDER,    19 20 21, 30)
 COMBO(equal,  &kp EQUAL,    19 20,    30)
 COMBO(plus,   &kp KP_PLUS,  19 21,    30)
 
+// parens and brackets
 COMBO(lpar,   &kp LPAR,     38 39,    30)
 COMBO(rpar,   &kp RPAR,     46 47,    30)
 COMBO(lbkt,   &kp LBKT,     39 40,    30)
@@ -48,16 +51,18 @@ COMBO(rbrc,   &kp RBRC,     45 47,    30)
 COMBO(lt,     &kp LT,       38 39 40, 30)
 COMBO(gt,     &kp GT,       45 46 47, 30)
 
-COMBO(ctrl_u, &kp LC(U),    19 22,    30)
-
+// crtl os actions
 COMBO(copy,   &kp LG(C),    26 39,    30)
 COMBO(paste,  &kp LG(V),    27 40,    30)
 COMBO(find,   &kp LG(F),    28 41,    30)
 COMBO(finda,  &kp LG(G),    29 41,    30)
 
+// vim
+COMBO(ctrl_u, &kp LC(U),    19 22,    30)
 COMBO(vim_wa, &vim_wa,      40 14,    40)
 COMBO(vim_qa, &vim_qa,      40 13,    40)
 
+// caps word
 COMBO(capswd, &caps_word,   36 49,    50)
 
     };
