@@ -13,6 +13,7 @@
 #define G_C_R LG(LC(RIGHT))
 #define A_C_D LA(LC(DEL))
 
+#include "macros.dtsi"
 #include "combos.dtsi"
 
 &mt {

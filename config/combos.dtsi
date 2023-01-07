@@ -29,7 +29,7 @@ COMBO(excl,   &kp EXCL,     13 26,    30)
 COMBO(at,     &kp AT,       14 27,    30)
 COMBO(hash,   &kp HASH,     15 28,    30)
 COMBO(dllr,   &kp DLLR,     16 29,    30)
-COMBO(prcnt,  &kp PRCNT,    17 30,    30)
+COMBO(prcnt,  &kp PRCNT,    17 29,    30)
 COMBO(caret,  &kp CARET,    18 31,    30)
 COMBO(amps,   &kp AMPS,     19 32,    30)
 COMBO(astrk,  &kp ASTRK,    20 33,    30)
@@ -49,6 +49,14 @@ COMBO(lt,     &kp LT,       38 39 40, 30)
 COMBO(gt,     &kp GT,       45 46 47, 30)
 
 COMBO(ctrl_u, &kp LC(U),    19 22,    30)
+
+COMBO(copy,   &kp LG(C),    26 39,    30)
+COMBO(paste,  &kp LG(V),    27 40,    30)
+COMBO(find,   &kp LG(F),    28 41,    30)
+COMBO(finda,  &kp LG(G),    29 40,    30)
+
+COMBO(vim_wa, &vim_wa,      40 14,    40)
+COMBO(vim_qa, &vim_qa,      40 13,    40)
 
 COMBO(capswd, &caps_word,   36 49,    50)
 
