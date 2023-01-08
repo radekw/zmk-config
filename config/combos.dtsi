@@ -69,23 +69,23 @@ COMBO(rbrc,   &kp RBRC,     45 47,    30)
 COMBO(lt,     &kp LT,       38 39 40, 40)
 COMBO(gt,     &kp GT,       45 46 47, 40)
 
-// os actions
-COMBO(cut,    &kp LG(X),    25 38,    30)
-COMBO(copy,   &kp LG(C),    26 39,    30)
-COMBO(paste,  &kp LG(V),    27 40,    30)
-COMBO(find,   &kp LG(F),    15 28,    30)
-COMBO(finda , &kp LG(G),    16 29,    30)
-COMBO(reload, &kp LG(R),     3 16,    30)
-COMBO(newtab, &kp LG(T),     4 17,    30)
-
-// shell
-COMBO(ctrl_p, &kp LC(P),    11 22,    30)
-COMBO(ctrl_l, &kp LC(L),    22 33,    30)
+// ctrl shortcuts
+COMBO(ctrl_x, &kp LC(X),    25 38,    30)
+COMBO(ctrl_c, &kp LC(C),    26 39,    30)
+COMBO(ctrl_v, &kp LC(V),    27 40,    30)
+COMBO(ctrl_f, &kp LC(F),    15 28,    30)
+COMBO(ctrl_b, &kp LC(B),    28 41,    30)
+COMBO(ctrl_g, &kp LC(G),    16 29,    30)
+COMBO(ctrl_r, &kp LC(R),     3 16,    30)
+COMBO(ctrl_t, &kp LC(T),     4 17,    30)
 COMBO(ctrl_n, &kp LC(N),    31 44,    30)
-
-// vim
+COMBO(ctrl_l, &kp LC(L),    22 33,    30)
+COMBO(ctrl_o, &kp LC(O),    10 21,    30)
+COMBO(ctrl_p, &kp LC(P),    11 22,    30)
 COMBO(ctrl_w, &kp LC(W),     1 14,    30)
 COMBO(ctrl_u, &kp LC(U),     8 19,    30)
+
+// vim
 COMBO(vim_wa, &vim_wa,      40 14,    40)
 COMBO(vim_qa, &vim_qa,      40 13,    40)
 
