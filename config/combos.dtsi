@@ -6,6 +6,15 @@
             layers = <0 1>; \
         };
 
+#define COMBOMOD(NAME, BINDINGS, KEYPOS, TERM) \
+        combo_##NAME { \
+            timeout-ms = <TERM>; \
+            bindings = <BINDINGS>; \
+            key-positions = <KEYPOS>; \
+            layers = <0 1>; \
+            slow-release = true; \
+        };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -77,13 +86,30 @@ COMBO(find,   &kp LG(F),    15 28,    30)
 COMBO(finda , &kp LG(G),    16 29,    30)
 COMBO(reload, &kp LG(R),     3 16,    30)
 COMBO(newtab, &kp LG(T),     4 17,    30)
-COMBO(new,    &kp LG(N),    31 44,    30)
+
+// shell
+COMBO(ctrl_p, &kp LC(P),    11 22,    30)
+COMBO(ctrl_l, &kp LC(L),    22 33,    30)
+COMBO(ctrl_n, &kp LC(N),    31 44,    30)
 
 // vim
 COMBO(ctrl_w, &kp LC(W),     1 14,    30)
 COMBO(ctrl_u, &kp LC(U),     8 19,    30)
 COMBO(vim_wa, &vim_wa,      40 14,    40)
 COMBO(vim_qa, &vim_qa,      40 13,    40)
+
+/*                KEY POSITIONS
+  ╭────────────────────────╮ ╭────────────────────────╮
+  │  0  1  2  3  4  5      │ │       6  7  8  9 10 11 │
+  │ 12 13 14 15 16 17      │ │      18 19 20 21 22 23 │
+  │ 24 25 26 27 28 29      │ │      30 31 32 33 34 35 │
+  │ 36 37 38 39 40 41 42   │ │   43 44 45 46 47 48 49 │
+  ╰──────────╮ 50 51 52 53 │ │ 54 55 56 57 ╭──────────╯
+             ╰─────────────╯ ╰─────────────╯            */
+
+// mods
+COMBOMOD(lctrl,  &kp LCTRL,   28 29, 30)
+COMBOMOD(rctrl,  &kp RCTRL,   31 32, 30)
 
 // caps word
 COMBO(capswd, &caps_word,   36 49,    50)
