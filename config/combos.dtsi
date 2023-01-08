@@ -43,7 +43,6 @@ COMBO(prcnt,  &kp PRCNT,     5 16,    30)
 COMBO(caret,  &kp CARET,     6 19,    30)
 COMBO(amps,   &kp AMPS,      7 20,    30)
 COMBO(astrk,  &kp ASTRK,     8 21,    30)
-COMBO(colon,  &kp COLON,    34 35,    30)
 
 // signs
 COMBO(minus,  &kp KP_MINUS, 20 21,    30)
