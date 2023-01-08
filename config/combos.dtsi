@@ -12,7 +12,7 @@
             bindings = <BINDINGS>; \
             key-positions = <KEYPOS>; \
             layers = <0 1>; \
-            slow-release = true; \
+            slow-release = <true>; \
         };
 
 / {
@@ -108,8 +108,10 @@ COMBO(vim_qa, &vim_qa,      40 13,    40)
              ╰─────────────╯ ╰─────────────╯            */
 
 // mods
-COMBOMOD(lctrl,  &kp LCTRL,   28 29, 30)
-COMBOMOD(rctrl,  &kp RCTRL,   31 32, 30)
+COMBOMOD(lshift,  &kp LSHIFT,  24 25, 30)
+COMBOMOD(rshift,  &kp RSHIFT,  34 35, 30)
+COMBOMOD(lctrl,   &kp LCTRL,   28 29, 30)
+COMBOMOD(rctrl,   &kp RCTRL,   31 32, 30)
 
 // caps word
 COMBO(capswd, &caps_word,   36 49,    50)
