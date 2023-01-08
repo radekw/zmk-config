@@ -75,6 +75,7 @@ COMBO(gt,     &kp GT,       45 46 47, 40)
 COMBO(ctrl_x, &kp LC(X),    25 38,    30)
 COMBO(ctrl_c, &kp LC(C),    26 39,    30)
 COMBO(ctrl_v, &kp LC(V),    27 40,    30)
+COMBO(ctrl_d, &kp LC(D),    14 27,    30)
 COMBO(ctrl_f, &kp LC(F),    15 28,    30)
 COMBO(ctrl_b, &kp LC(B),    28 41,    30)
 COMBO(ctrl_g, &kp LC(G),    16 29,    30)
@@ -105,8 +106,8 @@ COMBO(vim_qa, &vim_qa,      40 13,    40)
 // mods
 COMBO(lshift,  &kp LSHIFT,  24 25, 40)
 COMBO(rshift,  &kp RSHIFT,  34 35, 40)
-COMBO(lctrl,   &kp LCTRL,   28 29, 40)
-COMBO(rctrl,   &kp RCTRL,   30 31, 40)
+COMBO(lctrl,   &kp LCTRL,   25 26, 40)
+COMBO(rctrl,   &kp RCTRL,   33 34, 40)
 
 // caps word
 COMBO(capswd, &caps_word,   36 49,    50)
