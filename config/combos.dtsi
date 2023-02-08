@@ -44,7 +44,6 @@ COMBO(caret,  &kp CARET,     6 19,    30)
 COMBO(amps,   &kp AMPS,      7 20,    30)
 COMBO(astrk,  &kp ASTRK,     8 21,    30)
 COMBO(pipe,   &kp PIPE,     22 23,    30)
-COMBO(qmark,  &kp QMARK,    46 48,    30)
 
 // signs
 COMBO(minus,  &kp KP_MINUS, 20 21,    30)

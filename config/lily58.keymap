@@ -67,31 +67,31 @@
 
         default_layer {
             bindings = <
-&kp GRAVE  &kp N1       &kp N2  &kp N3    &kp N4  &kp N5                        &kp N6  &kp N7   &kp N8     &kp N9   &kp N0          &kp MINUS
-&kp TAB    &kp Q        &kp W   &kp E     &kp R   &kp T                         &kp Y   &kp U    &kp I      &kp O    &kp P           &kp BSLH
-&kp BSPC   &kp A        &kp S   &kp D     &kp F   &kp G                         &kp H   &kp J    &kp K      &kp L    &kp SEMI        &kp SQT
-&kp LSHFT  &hm LCTRL Z  &kp X   &kp C     &kp V   &kp B   &kp LCTRL  &kp RCTRL  &kp N   &kp M    &kp COMMA  &kp DOT  &hm RCTRL FSLH  &mt RSHFT RET
-                                &kp LGUI  &mo 5   &mo 2   &kp RET    &kp SPACE  &mo 3   &kp DEL  &kp RALT
+&kp GRAVE  &kp N1    &kp N2  &kp N3    &kp N4  &kp N5                        &kp N6  &kp N7   &kp N8     &kp N9   &kp N0          &kp MINUS
+&kp TAB    &hm LA Q  &kp W   &kp E     &kp R   &kp T                         &kp Y   &kp U    &kp I      &kp O    &kp P           &kp BSLH
+&kp BSPC   &kp A     &kp S   &kp D     &kp F   &kp G                         &kp H   &kp J    &kp K      &kp L    &kp SEMI        &kp SQT
+&kp LSHFT  &hm LC Z  &kp X   &kp C     &kp V   &kp B   &kp LCTRL  &kp RCTRL  &kp N   &kp M    &kp COMMA  &kp DOT  &hm RCTRL FSLH  &mt RSHFT RET
+                             &kp LGUI  &mo 5   &mo 2   &kp RET    &kp SPACE  &mo 3   &kp DEL  &kp RALT
             >;
         };
 
         win_layer {
             bindings = <
-&kp GRAVE  &kp N1       &kp N2  &kp N3    &kp N4  &kp N5                       &kp N6  &kp N7   &kp N8     &kp N9   &kp N0          &kp MINUS
-&kp TAB    &kp Q        &kp W   &kp E     &kp R   &kp T                        &kp Y   &kp U    &kp I      &kp O    &kp P           &kp BSLH
-&kp BSPC   &hm LSHFT A  &kp S   &kp D     &kp F   &kp G                        &kp H   &kp J    &kp K      &kp L    &hm RSHFT SEMI  &kp SQT
-&kp LSHFT  &hm LCTRL Z  &kp X   &kp C     &kp V   &kp B   &kp LBKT  &kp RBKT   &kp N   &kp M    &kp COMMA  &kp DOT  &hm RCTRL FSLH  &mt RSHFT RET
-                                &kp LALT  &mo 5   &mo 2   &kp RET   &kp SPACE  &mo 3   &kp DEL  &kp RGUI
+&kp GRAVE  &kp N1    &kp N2  &kp N3    &kp N4  &kp N5                       &kp N6  &kp N7   &kp N8     &kp N9   &kp N0          &kp MINUS
+&kp TAB    &hm LA Q  &kp W   &kp E     &kp R   &kp T                        &kp Y   &kp U    &kp I      &kp O    &kp P           &kp BSLH
+&kp BSPC   &kp A     &kp S   &kp D     &kp F   &kp G                        &kp H   &kp J    &kp K      &kp L    &hm RSHFT SEMI  &kp SQT
+&kp LSHFT  &hm LC Z  &kp X   &kp C     &kp V   &kp B   &kp LBKT  &kp RBKT   &kp N   &kp M    &kp COMMA  &kp DOT  &hm RCTRL FSLH  &mt RSHFT RET
+                             &kp LALT  &mo 5   &mo 2   &kp RET   &kp SPACE  &mo 3   &kp DEL  &kp RGUI
             >;
         };
 
         lower_layer {
             bindings = <
-&kp ESC  &none   &none   &none   &none   &none                   &none            &kp KP_N0  &kp KP_N0  &kp LPAR   &kp RPAR      &kp BSPC
-&none    &none   &none   &none   &none   &none                   &kp KP_DIVIDE    &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &none
-&kp DEL  &none   &none   &none   &none   &none                   &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp KP_DOT
-&none    &none   &none   &none   &none   &none   &none   &none   &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_EQUAL  &kp KP_DOT
-                         &trans  &trans  &trans  &trans  &trans  &trans           &kp DEL    &trans
+&kp ESC  &none    &none    &none   &none   &none                   &none            &kp KP_N0  &kp KP_N0  &kp LPAR   &kp RPAR      &kp BSPC
+&none    &vim_qa  &vim_wa  &none   &none   &none                   &kp KP_DIVIDE    &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &none
+&kp DEL  &none    &none    &none   &none   &none                   &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp KP_DOT
+&none    &none    &none    &none   &none   &none   &none   &none   &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_EQUAL  &kp KP_DOT
+                           &trans  &trans  &trans  &trans  &trans  &trans           &kp DEL    &trans
             >;
         };
 
@@ -109,7 +109,7 @@
             bindings = <
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1      &bt BT_SEL 2 &none   &none                   &to 0   &to 1  &none       &none       &none        &none
 &reset     &bootloader  &ext_power EP_TOG &none        &none   &none                   &none   &none  &none       &none       &bootloader  &reset
-&none      &none        &none             &none        &none   &none                   &none   &none  &none       &none       &none        &none
+&none      &kp C_BRI_DN &kp C_BRI_UP      &none        &none   &none                   &none   &none  &none       &none       &none        &none
 &none      &kp C_VOL_DN &kp C_VOL_UP      &kp K_MUTE   &none   &none   &none   &none   &none   &none  &kp C_PREV  &kp C_NEXT  &kp C_PP     &none
                         &trans            &trans       &trans  &trans  &trans  &trans  &trans  &trans
             >;
@@ -117,11 +117,11 @@
 
         nav_layer {
             bindings = <
-&kp F12      &kp F1    &kp F2         &kp F3         &kp F4     &kp F5                  &kp F6    &kp F7     &kp F8     &kp F9     &kp F10  &kp F11
-&kp LG(TAB)  &none     &kp UP         &kp G_C_L      &kp G_C_R  &none                   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none    &kp PSCRN
-&kp DEL      &kp LEFT  &kp DOWN       &kp RIGHT      &none      &none                   &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none    &kp A_C_D
-&none        &none     &kp LG(PG_DN)  &kp LG(PG_UP)  &none      &none   &none   &none   &none     &none      &none      &none      &none    &none
-                                      &trans         &trans     &trans  &trans  &trans  &trans    &kp DEL    &trans
+&kp F12      &kp F1    &kp F2    &kp F3     &kp F4  &kp F5                  &kp F6    &kp F7     &kp F8     &kp F9     &kp F10  &kp F11
+&kp LG(TAB)  &none     &kp UP    &none      &none   &none                   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none    &kp PSCRN
+&kp DEL      &kp LEFT  &kp DOWN  &kp RIGHT  &none   &none                   &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none    &kp A_C_D
+&none        &none     &none     &none      &none   &none   &none   &none   &none     &none      &none      &none      &none    &none
+                                 &trans     &trans  &trans  &trans  &trans  &trans    &kp DEL    &trans
             >;
         };
 
