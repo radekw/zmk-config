@@ -14,7 +14,7 @@
 #define A_C_D LA(LC(DEL))
 
 #include "macros.dtsi"
-#include "combos.dtsi"
+#include "lily58.combos.dtsi"
 
 &mt {
     tapping-term-ms = <175>;
